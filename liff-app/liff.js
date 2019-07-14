@@ -24,13 +24,6 @@ window.onload = () => {
 // Handler functions //
 // ----------------- //
 const SOUND_PATH = "https://soundeffect-lab.info/sound/voice/mp3/line-girl1/line-girl1-otsukaresamadesu1.mp3";
-// 再生
-var play = function(element) {
-    // ファイル名を取得
-    var name = element.getAttribute("name");
-    var audio = new Audio(SOUND_PATH);
-    audio.play();
-};
 
 
 function handlerToggleLed() {
@@ -46,7 +39,7 @@ function handlerToggleLed() {
 
 function uiToggleLedButton(state) {
     const el = document.getElementById("btn-led-toggle");
-    el.innerText = state ? "ハーバリウム OFF" : "ハーバリウム ON2";
+    el.innerText = state ? "ハーバリウム OFF" : "ハーバリウム ON3";
 
     if (state) {
       el.classList.add("led-on");
@@ -60,8 +53,13 @@ function uiCountPressButton() {
 
     const el = document.getElementById("click-count");
     if (clickCount>=5) {
-        play;
         el.innerText = clickCount + "回";
+        // 再生
+        var play = function(element) {
+            var audio = new Audio(SOUND_PATH);
+            audio.play();
+        };
+
     }else{
         el.innerText = clickCount + "回";
 
