@@ -52,17 +52,11 @@ function uiCountPressButton() {
     clickCount++;
 
     const el = document.getElementById("click-count");
-    if (clickCount>=5) {
-        el.innerText = clickCount + "回";
+    if (clickCount%5=0) {
         var audio = new Audio(SOUND_PATH);
         audio.play();
-
-    }else{
-        el.innerText = clickCount + "回";
-        var audio = new Audio(SOUND_PATH);
-        audio.play();
-
     }
+    el.innerText = clickCount + "回";
     
 }
 
