@@ -60,6 +60,10 @@ function uiCountPressButton() {
 
     const el = document.getElementById("click-count");
     el.innerText = clickCount;
+    if (clickCount==5) {
+        play(this);
+    }
+    
 }
 
 function uiToggleStateButton(pressed) {
