@@ -23,6 +23,19 @@ window.onload = () => {
 // ----------------- //
 // Handler functions //
 // ----------------- //
+const SOUND_PATH = "https://soundeffect-lab.info/sound/voice/mp3/line-girl1/line-girl1-otsukaresamadesu1.mp3";
+// 再生
+var play = function(element) {
+    // ファイル名を取得
+    var name = element.getAttribute("name");
+    // パス + ファイル名 + サポートしている拡張子
+    var file_path = SOUND_PATH + name + '.' + AUDIO_EXT;
+    // Audio エレメントを生成
+    var audio = new Audio(file_path);
+    // 再生
+    audio.play();
+};
+
 
 function handlerToggleLed() {
     ledState = !ledState;
