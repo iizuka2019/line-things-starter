@@ -59,10 +59,12 @@ function uiCountPressButton() {
     clickCount++;
 
     const el = document.getElementById("click-count");
-    el.innerText = clickCount;
     if (clickCount>=5) {
         play(this);
         el.innerText = clickCount + "回";
+    }else{
+        el.innerText = clickCount + "回";
+
     }
     
 }
