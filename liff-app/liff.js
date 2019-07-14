@@ -52,7 +52,7 @@ function uiCountPressButton() {
     clickCount++;
 
     const el = document.getElementById("click-count");
-    if (clickCount%5=0) {
+    if (clickCount % 5 ==0) {
         var audio = new Audio(SOUND_PATH);
         audio.play();
     }
