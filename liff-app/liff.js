@@ -28,11 +28,7 @@ const SOUND_PATH = "https://soundeffect-lab.info/sound/voice/mp3/line-girl1/line
 var play = function(element) {
     // ファイル名を取得
     var name = element.getAttribute("name");
-    // パス + ファイル名 + サポートしている拡張子
-//    var file_path = SOUND_PATH + name + '.' + AUDIO_EXT;
-    // Audio エレメントを生成
     var audio = new Audio(SOUND_PATH);
-    // 再生
     audio.play();
 };
 
