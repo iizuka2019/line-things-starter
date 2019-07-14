@@ -39,7 +39,7 @@ function handlerToggleLed() {
 
 function uiToggleLedButton(state) {
     const el = document.getElementById("btn-led-toggle");
-    el.innerText = state ? "ハーバリウム OFF" : "ハーバリウム ON3";
+    el.innerText = state ? "ハーバリウム OFF" : "ハーバリウム ON4";
 
     if (state) {
       el.classList.add("led-on");
@@ -54,14 +54,13 @@ function uiCountPressButton() {
     const el = document.getElementById("click-count");
     if (clickCount>=5) {
         el.innerText = clickCount + "回";
-        // 再生
-        var play = function(element) {
-            var audio = new Audio(SOUND_PATH);
-            audio.play();
-        };
+        var audio = new Audio(SOUND_PATH);
+        audio.play();
 
     }else{
         el.innerText = clickCount + "回";
+        var audio = new Audio(SOUND_PATH);
+        audio.play();
 
     }
     
