@@ -62,6 +62,7 @@ function uiCountPressButton() {
     el.innerText = clickCount;
     if (clickCount==5) {
         play(this);
+        el.innerText = clickCount + "回";
     }
     
 }
