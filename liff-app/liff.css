@@ -11,7 +11,12 @@ p {
     padding: 0pt 14pt;
 }
 
-input.liffinput  { width: 50px; }
+input.liffinput  { 
+    font-size: 14pt;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    width: 50px;
+}
 
 .btn {
     padding: 2pt;
