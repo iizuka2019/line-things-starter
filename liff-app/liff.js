@@ -58,17 +58,18 @@ function uiCountPressButton() {
     if (clickCount == 10) {
         //10回
         //https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-zyu1.mp3
-        var audio1 = new Audio("https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-zyu1.mp3");
+        //https://iizuka2019.github.io/line-things-starter/liff-app/10.mp3
+        var audio1 = new Audio("https://iizuka2019.github.io/line-things-starter/liff-app/10.mp3");
         //audio1.play();
 
         //回
         //https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-kai1.mp3
-        var audio2 = new Audio("https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-kai1.mp3");
+        var audio2 = new Audio("https://iizuka2019.github.io/line-things-starter/liff-app/infovoicekai.mp3");
         //audio2.play();
 
         //経過
         //https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-keika1.mp3
-        var audio3 = new Audio("https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-keika1.mp3");
+        var audio3 = new Audio("https://iizuka2019.github.io/line-things-starter/liff-app/infovoicekeika.mp3");
         //audio3.play();
 
         audio1.play();
