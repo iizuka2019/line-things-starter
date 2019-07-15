@@ -54,7 +54,8 @@ function uiCountPressButton() {
     const el = document.getElementById("click-count");
     const elCal = document.getElementById("cal-count");
     //const elweight = document.getElementById("weight-text");
-    if (clickCount % 5 ==0) {
+    //if (clickCount % 5 ==0) {
+    if (clickCount == 10) {
         //10回
         //https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-zyu1.mp3
         var audio1 = new Audio("https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-zyu1.mp3");
@@ -85,7 +86,7 @@ function uiCountPressButton() {
     //体重【kg】×0.1532×時間【分】×補正係数
     //75×0.1532×10×0.96
     el.innerText = clickCount + "回";
-    //elCal.innerText = elweight.innerText * clickCount * 10 * 0.96 ;
+    elCal.innerText = 63 * clickCount * 10 * 0.96 ;
     
 }
 
