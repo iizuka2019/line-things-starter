@@ -53,6 +53,10 @@ function uiCountPressButton() {
 
     const el = document.getElementById("click-count");
     const elCal = document.getElementById("cal-count");
+
+    const elGender = document.getElementById("gender");
+
+
     //const elweight = document.getElementById("weight-text");
     //if (clickCount % 5 ==0) {
     if (clickCount == 10) {
@@ -94,8 +98,25 @@ function uiCountPressButton() {
         
     }
     //体重【kg】×0.1532×時間【分】×補正係数
-    //75×0.1532×10×0.96
+    //75×0.1532×10×0.96    
     el.innerText = clickCount + "回";
+    
+        
+    // form要素内のラジオボタングループ(name="hoge")を取得
+    var radioNodeList = elGender.genders ;
+    // 選択状態の値(value)を取得 (Bが選択状態なら"b"が返る)
+    var selGender = radioNodeList.value ;
+
+    if ( selGender === "" ) {
+    } elseif( selGender === "male") {
+        elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
+    } elseif( selGender === "female") {
+        elCal.innerText = Math.round(63 * clickCount * 10 * 0.87) ;
+    }
+    
+
+    
+    
     elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
     
 }
