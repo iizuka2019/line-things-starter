@@ -106,13 +106,13 @@ function uiCountPressButton() {
     // 選択状態の値(value)を取得 (Bが選択状態なら"b"が返る)
     var selGender = radioNodeList.value ;
 
-    //if (selGender === "" ) {
-    //    elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
-    //} elseif( selGender === "male") {
-    //    elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
-    //} elseif( selGender === "female") {
-    //    elCal.innerText = Math.round(63 * clickCount * 10 * 0.87) ;
-    //}
+    if (selGender === "" ) {
+        elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
+    } elseif( selGender == "male") {
+        elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
+    } elseif( selGender == "female") {
+        elCal.innerText = Math.round(63 * clickCount * 10 * 0.87) ;
+    }
     
 
     
