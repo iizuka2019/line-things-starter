@@ -71,23 +71,32 @@ function uiCountPressButton() {
         //https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-keika1.mp3
         var audio3 = new Audio("https://iizuka2019.github.io/line-things-starter/liff-app/infovoicekeika.mp3");
         //audio3.play();
-
+        
+        var audio4 = new Audio("https://soundeffect-lab.info/sound/voice/mp3/line-girl1/line-girl1-ganbare1.mp3");
+//https://soundeffect-lab.info/sound/voice/mp3/line-girl1/line-girl1-ganbare1.mp3
         audio1.play();
         audio1.addEventListener("ended",function(){
         audio2.play();
         audio2.addEventListener("ended", function(){
         audio3.play();
+        audio3.addEventListener("ended", function(){
+        audio4.play();
+        }, false);
         }, false);
         }, false);
         
         //var audio = new Audio(SOUND_PATH);
         //audio.play();
     }
-    
+    if (clickCount == 20 || clickCount == 30 || clickCount == 40 || clickCount == 50) {
+        var audio4 = new Audio("https://soundeffect-lab.info/sound/voice/mp3/line-girl1/line-girl1-ganbare1.mp3");
+        audio4.play();
+        
+    }
     //体重【kg】×0.1532×時間【分】×補正係数
     //75×0.1532×10×0.96
     el.innerText = clickCount + "回";
-    elCal.innerText = 63 * clickCount * 10 * 0.96 ;
+    elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
     
 }
 
