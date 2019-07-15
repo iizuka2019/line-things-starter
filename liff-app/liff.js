@@ -110,6 +110,8 @@ function uiCountPressButton() {
     //if (selGender == "" ) {
     //    elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
     //}
+    alert(selGender)
+    alert(elWeight)
     if( selGender == "male") {
         elCal.innerText = Math.round(elWeight * clickCount * 10 * 0.96) + "kcal" ;
     }else {
