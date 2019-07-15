@@ -57,18 +57,26 @@ function uiCountPressButton() {
     if (clickCount % 5 ==0) {
         //10回
         //https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-zyu1.mp3
-        var audio = new Audio("https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-zyu1.mp3");
-        audio.play();
+        var audio1 = new Audio("https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-zyu1.mp3");
+        //audio1.play();
 
         //回
         //https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-kai1.mp3
-        var audio = new Audio("https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-kai1.mp3");
-        audio.play();
+        var audio2 = new Audio("https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-kai1.mp3");
+        //audio2.play();
 
         //経過
         //https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-keika1.mp3
-        var audio = new Audio("https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-keika1.mp3");
-        audio.play();
+        var audio3 = new Audio("https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-keika1.mp3");
+        //audio3.play();
+
+        audio1.play();
+        audio1.addEventListener("ended",function(){
+        audio2.play();
+        audio2.addEventListener("ended", function(){
+        audio3.play();
+        }, false);
+        }, false);
         
         //var audio = new Audio(SOUND_PATH);
         //audio.play();
