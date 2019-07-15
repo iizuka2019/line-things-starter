@@ -39,7 +39,7 @@ function handlerToggleLed() {
 
 function uiToggleLedButton(state) {
     const el = document.getElementById("btn-led-toggle");
-    el.innerText = state ? "ハーバリウム OFF" : "ハーバリウム ON";
+    el.innerText = state ? "ハーバリウム OFF" : "ハーバリウム ON1";
 
     if (state) {
       el.classList.add("led-on");
