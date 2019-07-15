@@ -39,7 +39,7 @@ function handlerToggleLed() {
 
 function uiToggleLedButton(state) {
     const el = document.getElementById("btn-led-toggle");
-    el.innerText = state ? "ハーバリウム OFF" : "ハーバリウム ON3";
+    el.innerText = state ? "ハーバリウム OFF" : "ハーバリウム ON4";
 
     if (state) {
       el.classList.add("led-on");
@@ -106,13 +106,14 @@ function uiCountPressButton() {
     // 選択状態の値(value)を取得 (Bが選択状態なら"b"が返る)
     var selGender = radioNodeList.value ;
 
-    if (selGender === "" ) {
+    if (selGender == "" ) {
         elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
-    } elseif( selGender == "male") {
-        elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
-    } elseif( selGender == "female") {
-        elCal.innerText = Math.round(63 * clickCount * 10 * 0.87) ;
     }
+    //} elseif( selGender == "male") {
+        //elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
+    //} elseif( selGender == "female") {
+        //elCal.innerText = Math.round(63 * clickCount * 10 * 0.87) ;
+    //}
     
 
     
