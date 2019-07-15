@@ -53,7 +53,6 @@ function uiCountPressButton() {
 
     const el = document.getElementById("click-count");
     const elCal = document.getElementById("cal-count");
-
     const elGender = document.getElementById("gender");
 
 
@@ -103,16 +102,16 @@ function uiCountPressButton() {
     
         
     // form要素内のラジオボタングループ(name="hoge")を取得
-    var radioNodeList = elGender.genders ;
+    //var radioNodeList = elGender.genders ;
     // 選択状態の値(value)を取得 (Bが選択状態なら"b"が返る)
-    var selGender = radioNodeList.value ;
+    //var selGender = radioNodeList.value ;
 
-    if ( selGender === "" ) {
-    } elseif( selGender === "male") {
-        elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
-    } elseif( selGender === "female") {
-        elCal.innerText = Math.round(63 * clickCount * 10 * 0.87) ;
-    }
+    //if ( selGender === "" ) {
+    //} elseif( selGender === "male") {
+    //    elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
+    //} elseif( selGender === "female") {
+    //    elCal.innerText = Math.round(63 * clickCount * 10 * 0.87) ;
+    //}
     
 
     
