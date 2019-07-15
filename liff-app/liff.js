@@ -39,10 +39,26 @@ function handlerToggleLed() {
 
 function uiToggleLedButton(state) {
     const el = document.getElementById("btn-led-toggle");
-    el.innerText = state ? "ハーバリウム OFF" : "ハーバリウム ON4";
+    el.innerText = state ? "ハーバリウム OFF" : "トレーニング終了 ON1";
+    
+    
 
     if (state) {
-      el.classList.add("led-on");
+        el.classList.add("led-on");
+        
+        liff.sendMessages([
+            {
+                type:'text',
+                text:'Hello, World!'
+            }
+        ])
+        .then(() => {
+            console.log('message sent');
+        })
+        .catch((err) => {
+            console.log('error', err);
+        });
+
     } else {
       el.classList.remove("led-on");
     }
