@@ -107,9 +107,6 @@ function uiCountPressButton() {
     // 選択状態の値(value)を取得 (Bが選択状態なら"b"が返る)
     var selGender = radioNodeList.value ;
 
-    alert(selGender)
-    alert(elWeight)
-    
     if( selGender == "male") {
         elCal.innerText = Math.round(elWeight.value * clickCount * 10 * 0.96) + "kcal" ;
     }else {
