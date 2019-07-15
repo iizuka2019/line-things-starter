@@ -53,7 +53,7 @@ function uiCountPressButton() {
 
     const el = document.getElementById("click-count");
     const elCal = document.getElementById("cal-count");
-    const elGender = document.getElementById("gender");
+    //const elGender = document.getElementById("gender");
 
 
     //const elweight = document.getElementById("weight-text");
