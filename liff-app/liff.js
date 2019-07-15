@@ -18,6 +18,23 @@ let clickCount = 0;
 
 window.onload = () => {
     initializeApp();
+    // メッセージの送信
+    document.getElementById('sendmessagebutton').addEventListener('click', function () {
+        // https://developers.line.me/ja/reference/liff/#liffsendmessages()
+        liff.sendMessages([{
+            type: 'text',
+            text: "テキストメッセージの送信"
+        }, {
+            type: 'sticker',
+            packageId: '2',
+            stickerId: '144'
+        }]).then(function () {
+            window.alert("送信完了");
+        }).catch(function (error) {
+            window.alert("Error sending message: " + error);
+        });
+    });
+    
 };
 
 // ----------------- //
