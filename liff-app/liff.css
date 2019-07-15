@@ -18,6 +18,12 @@ input.liffinput  {
     width: 50px;
 }
 
+input.liffRadio  { 
+    font-size: 13pt;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    width: 30px;
+}
 .btn {
     padding: 2pt;
     font-size: 14pt;
