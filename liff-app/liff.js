@@ -102,7 +102,7 @@ function uiCountPressButton() {
     
         
     // form要素内のラジオボタングループ(name="hoge")を取得
-    var radioNodeList = elGender.genders ;
+    //var radioNodeList = elGender.genders ;
     // 選択状態の値(value)を取得 (Bが選択状態なら"b"が返る)
     //var selGender = radioNodeList.value ;
 
