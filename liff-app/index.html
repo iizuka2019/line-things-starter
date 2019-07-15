@@ -14,35 +14,35 @@
     <hr />
     <p>
       <img id="loading-animation" class="" src="loading.gif" height="14px" />
-      <span id="status" class="inactive">LINEにせつぞくちゅう</span>
+      <span id="status" class="inactive">LINEに接続中</span>
     </p>
     <hr />
     <div id="controls" class="hidden">
       <!-- Device Info Table -->
       <table class="device-info-table">
         <tr>
-          <th>たいじゅう：</th>
+          <th>体重：</th>
           <td><input type="text" class="liffinput"  name="weight" maxlength="3" value="63" id="weight-text"> kg
           </td>
         </tr>
         <tr>
-          <th>ねんれい：</th>
+          <th>年齢：</th>
           <td><input type="text" class="liffinput" name="age" maxlength="3" value="33"> 才
           </td>
         </tr>
         <tr>
-          <th>せいべつ：</th>
+          <th>性別：</th>
           <td>
             
           <form id="gender">
-                <input type="radio" name="genders" class="liffRadio" value="male" checked="checked">おとこ
-                <input type="radio" name="genders" class="liffRadio" value="female">おんな                               
+                <input type="radio" name="genders" class="liffRadio" value="male" checked="checked">男性
+                <input type="radio" name="genders" class="liffRadio" value="female">女性
           </form>
 
           </td>
         </tr>
         <tr>
-          <th class="device-info-cell device-info-key">とんだ回数：</th>
+          <th class="device-info-cell device-info-key">飛んだ回数：</th>
           <td class="device-info-cell device-info-val" id="click-count">0</td>
         </tr>
         <tr>
@@ -55,7 +55,7 @@
       <hr />
       <!-- Toggle LED -->
       <p>
-        <button id="btn-led-toggle" class="btn btn-led-toggle" onclick="handlerToggleLed()">ハーバリウム ON</button>
+        <button id="btn-led-toggle" class="btn btn-led-toggle" onclick="handlerToggleLed()">トレーニング終了 ON</button>
       </p>
       <hr />
     </div>
