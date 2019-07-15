@@ -53,8 +53,23 @@ function uiCountPressButton() {
 
     const el = document.getElementById("click-count");
     if (clickCount % 5 ==0) {
-        var audio = new Audio(SOUND_PATH);
+        //10回
+        //https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-zyu1.mp3
+        var audio = new Audio(https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-zyu1.mp3);
         audio.play();
+
+        //回
+        //https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-kai1.mp3
+        var audio = new Audio(https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-kai1.mp3);
+        audio.play();
+
+        //経過
+        //https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-keika1.mp3
+        var audio = new Audio(https://soundeffect-lab.info/sound/voice/mp3/info-girl1/info-girl1-keika1.mp3);
+        audio.play();
+        
+        //var audio = new Audio(SOUND_PATH);
+        //audio.play();
     }
     el.innerText = clickCount + "回";
     
