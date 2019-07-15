@@ -54,6 +54,7 @@ function uiCountPressButton() {
     const el = document.getElementById("click-count");
     const elCal = document.getElementById("cal-count");
     const elGender = document.getElementById("gender");
+    const elWeight = document.getElementById("weight-text");
 
 
     //const elweight = document.getElementById("weight-text");
@@ -110,16 +111,10 @@ function uiCountPressButton() {
     //    elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
     //}
     if( selGender == "male") {
-        elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
+        elCal.innerText = Math.round(elWeight * clickCount * 10 * 0.96) + "kcal" ;
     }else {
-        elCal.innerText = Math.round(63 * clickCount * 10 * 0.87) ;
-    }
-    
-
-    
-    
-    //elCal.innerText = Math.round(63 * clickCount * 10 * 0.96) ;
-    
+        elCal.innerText = Math.round(elWeight * clickCount * 10 * 0.87) + "kcal" ;
+    }    
 }
 
 function uiToggleStateButton(pressed) {
