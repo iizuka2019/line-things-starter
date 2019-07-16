@@ -74,7 +74,9 @@ function uiToggleLedButton(state) {
         });
 
     } else {
-      el.classList.remove("led-on");
+        el.classList.remove("led-on");
+        const elCal = document.getElementById("cal-count");
+        elCal.innerText = "0";
     }
 }
 
