@@ -26,18 +26,7 @@ window.onload = function (e) {
     // メッセージの送信
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         // https://developers.line.me/ja/reference/liff/#liffsendmessages()
-        liff.sendMessages([{
-            type: 'text',
-            text: "テキストメッセージの送信"
-        }, {
-            type: 'sticker',
-            packageId: '2',
-            stickerId: '144'
-        }]).then(function () {
-            window.alert("送信完了");
-        }).catch(function (error) {
-            window.alert("Error sending message: " + error);
-        });
+        
     });
 };
 
@@ -92,8 +81,9 @@ function handlerToggleLed() {
 
 function uiToggleLedButton(state) {
     const el = document.getElementById("btn-led-toggle");
-    el.innerText = state ? "ハーバリウム OFF" : "トレーニング終了 ON3";
-    
+    el.innerText = state ? "トレーニング開始" : "トレーニング終了";
+    const elCal = document.getElementById("cal-count");
+
     
 
     if (state) {
@@ -102,7 +92,7 @@ function uiToggleLedButton(state) {
         liff.sendMessages([
             {
                 type:'text',
-                text:'Hello, World!'
+                text:'トレーニング終了！' + elCal.value + "kCal消費したよ！"
             }
         ])
         .then(() => {
