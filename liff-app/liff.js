@@ -65,6 +65,7 @@ function uiToggleLedButton(state) {
                 type:'text',
                 text:'トレーニング終了！' + elCal.value + "kCal消費したよ！"
             }
+
         ])
         .then(() => {
             console.log('message sent');
@@ -76,7 +77,9 @@ function uiToggleLedButton(state) {
     } else {
         el.classList.remove("led-on");
         const elCal = document.getElementById("cal-count");
+        const el = document.getElementById("click-count");
         elCal.innerText = "0";
+        el.innerText = "0";
     }
 }
 
