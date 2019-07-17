@@ -54,7 +54,7 @@ function uiToggleLedButton(state) {
     const el = document.getElementById("btn-led-toggle");
     el.innerText = state ? "トレーニング開始" : "トレーニング終了";
     const elCal = document.getElementById("cal-count");
-    const el = document.getElementById("click-count");
+    const elCount = document.getElementById("click-count");
     
     
 
@@ -64,7 +64,7 @@ function uiToggleLedButton(state) {
         liff.sendMessages([
             {
                 type:'text',
-                text: el.value + '回飛んだ！' + elCal.value + "kcal消費したよ！"
+                text: elCount.value + '回飛んだ！' + elCal.value + "kcal消費したよ！"
             }
 
         ])
@@ -78,7 +78,7 @@ function uiToggleLedButton(state) {
     } else {
         el.classList.remove("led-on");
         elCal.innerText = "0kcal";
-        el.innerText = "0";
+        elCount.innerText = "0";
     }
 }
 
