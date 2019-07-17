@@ -77,8 +77,6 @@ function uiToggleLedButton(state) {
 
     } else {
         el.classList.remove("led-on");
-        const elCal = document.getElementById("cal-count");
-        const el = document.getElementById("click-count");
         elCal.innerText = "0kcal";
         el.innerText = "0";
     }
