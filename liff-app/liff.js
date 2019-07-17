@@ -90,6 +90,7 @@ function uiCountPressButton() {
     const elCal = document.getElementById("cal-count");
     const elGender = document.getElementById("gender");
     const elWeight = document.getElementById("weight-text");
+    const elAge = document.getElementById("age-text");
 
 
     //const elweight = document.getElementById("weight-text");
@@ -143,7 +144,9 @@ function uiCountPressButton() {
     var selGender = radioNodeList.value ;
 
     if( selGender == "male") {
-        elCal.innerText = Math.round(elWeight.value * 0.1532* (clickCount/2) * 0.96) + "kcal" ;
+        if(elAge.value >= 30 || elAge.value <= 39 ){
+            elCal.innerText = Math.round(elWeight.value * 0.1532 * (clickCount/2) * 0.96) + "kcal" ;
+        }
     }else {
         elCal.innerText = Math.round(elWeight.value * 0.1532 * (clickCount/2) * 0.87) + "kcal" ;
     }    
