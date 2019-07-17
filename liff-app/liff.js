@@ -64,7 +64,7 @@ function uiToggleLedButton(state) {
         liff.sendMessages([
             {
                 type:'text',
-                text: el.innerText + '回飛んだ！' + elCal.innerText + "kcal消費したよ！"
+                text: el.value + '回飛んだ！' + elCal.value + "kcal消費したよ！"
             }
 
         ])
