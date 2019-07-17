@@ -145,10 +145,10 @@ function uiCountPressButton() {
 
     if( selGender == "male") {
         if(elAge.value >= 30 || elAge.value <= 39 ){
-            elCal.innerText = Math.round(elWeight.value * 0.1532 * (clickCount/2) * 0.96) + "kcal" ;
+            elCal.innerText = Math.round(elWeight.value * 0.1532 * (2/clickCount) * 0.96) + "kcal" ;
         }
     }else {
-        elCal.innerText = Math.round(elWeight.value * 0.1532 * (clickCount/2) * 0.87) + "kcal" ;
+        elCal.innerText = Math.round(elWeight.value * 0.1532 * (2/clickCount) * 0.87) + "kcal" ;
     }    
 }
 
