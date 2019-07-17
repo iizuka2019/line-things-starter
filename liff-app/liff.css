@@ -19,11 +19,8 @@ input.liffinput  {
 }
 
 input.liffRadio { 
-    width: 1em;
-    height: 1em;
-    font-size: 5pt;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
+    width: 2em;
+    height: 2em;
 }
 
 
