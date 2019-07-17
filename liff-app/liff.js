@@ -176,7 +176,7 @@ function uiToggleDeviceConnected(connected) {
         // Show status connected
         elStatus.classList.remove("inactive");
         elStatus.classList.add("success");
-        elStatus.innerText = "LINEとなわとび がつながったよー";
+        elStatus.innerText = "LINEと接続中";
         // Show controls
         elControls.classList.remove("hidden");
     } else {
@@ -185,7 +185,7 @@ function uiToggleDeviceConnected(connected) {
         // Show status disconnected
         elStatus.classList.remove("success");
         elStatus.classList.add("inactive");
-        elStatus.innerText = "LINEとなわとびが近くにないよー";
+        elStatus.innerText = "LINEと未接続";
         // Hide controls
         elControls.classList.add("hidden");
     }
