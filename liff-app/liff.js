@@ -74,6 +74,7 @@ function uiToggleLedButton(state) {
         .catch((err) => {
             console.log('error', err);
         });
+        liff.closeWindow();
 
     } else {
         el.classList.remove("led-on");
