@@ -143,9 +143,9 @@ function uiCountPressButton() {
     var selGender = radioNodeList.value ;
 
     if( selGender == "male") {
-        elCal.innerText = Math.round(elWeight.value * clickCount * 10 * 0.96) + "kcal" ;
+        elCal.innerText = Math.round((elWeight.value * clickCount * 10 * 0.96)/1000) + "kcal" ;
     }else {
-        elCal.innerText = Math.round(elWeight.value * clickCount * 10 * 0.87) + "kcal" ;
+        elCal.innerText = Math.round((elWeight.value * clickCount * 10 * 0.87)/1000) + "kcal" ;
     }    
 }
 
